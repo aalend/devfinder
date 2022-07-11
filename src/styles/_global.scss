@@ -1,0 +1,69 @@
+:root {
+  --font-mono: 'Space Mono', monospace;
+
+  --font-bold: 700;
+  --font-normal: 400;
+
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-300: hsl(227, 100%, 98%);
+  --color-neutral-500: hsl(217, 20%, 51%);
+  --color-neutral-700: hsl(222, 41%, 20%);
+  --color-neutral-900: hsl(220, 40%, 13%);
+  --color-accent-400: hsl(212, 100%, 50%);
+  --shadow-accent-light: 0px 16px 30px -10px rgba(70, 96, 187, 0.19);
+  --shadow-accent-dark: 0px 16px 30px -10px rgba(70, 96, 187, 0.05);
+
+  --font-xs: 0.8125rem;
+  --font-sm: 0.9375rem;
+  --font-base: 1rem;
+  --font-lg: 1.375rem;
+  --font-xl: 1.625rem;
+
+  --font-heading: var(--font-xl);
+  --font-title: var(--font-base);
+  --font-subtitle: var(--font-xs);
+  --font-body: var(--font-xs);
+}
+
+@media (min-width: 22.5rem) {
+  :root {
+    --font-title: var(--font-xl);
+    --font-subtitle: var(--font-base);
+    --font-body: var(--font-base);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark {
+    background: var(--color-neutral-900) !important;
+    color: var(--color-neutral-100) !important;
+  }
+
+  .dark .form {
+    box-shadow: var(--shadow-accent-dark) !important;
+
+    & input {
+      background: var(--color-neutral-700) !important;
+      color: var(--color-neutral-100) !important;
+
+      &::placeholder {
+        color: var(--color-neutral-100) !important;
+      }
+    }
+  }
+
+  .dark .devfinder-grid {
+    background: var(--color-neutral-700) !important;
+    color: var(--color-neutral-100) !important;
+    box-shadow: var(--shadow-accent-dark) !important;
+  }
+
+  .dark .repos {
+    background: var(--color-neutral-900) !important;
+    color: var(--color-neutral-100) !important;
+  }
+
+  .dark .button[data-toggle='dark'] {
+    color: var(--color-neutral-100);
+  }
+}

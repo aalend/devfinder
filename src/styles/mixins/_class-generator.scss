@@ -1,0 +1,7 @@
+@mixin utilities($property, $map) {
+	@each $key, $value in $map {
+		&-#{$key} {
+			#{$property}: $value;
+		}
+	}
+}

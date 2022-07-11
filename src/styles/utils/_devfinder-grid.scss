@@ -1,0 +1,37 @@
+.devfinder-grid {
+  display: grid;
+  grid-template-areas:
+    'profileImage profileName profileName'
+    'profileDescription profileDescription profileDescription'
+    'profileRepos profileRepos profileRepos'
+    'profileInfo profileInfo profileInfo';
+  gap: 1.5rem;
+
+  @media (min-width: 37.5rem) {
+    grid-template-areas:
+      'profileImage profileName profileName'
+      '. profileDescription profileDescription'
+      '. profileRepos profileRepos'
+      '. profileInfo profileInfo';
+  }
+}
+
+img {
+  grid-area: profileImage;
+}
+
+.profile {
+  grid-area: profileName;
+}
+
+.profile-description {
+  grid-area: profileDescription;
+}
+
+.repos {
+  grid-area: profileRepos;
+}
+
+.info {
+  grid-area: profileInfo;
+}

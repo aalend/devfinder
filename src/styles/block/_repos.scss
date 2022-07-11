@@ -1,0 +1,12 @@
+.repos {
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: center;
+
+    @media (min-width: 37.5rem) {
+      gap: 5rem;
+    }
+  }
+}

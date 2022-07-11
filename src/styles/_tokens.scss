@@ -1,0 +1,44 @@
+$fontFamily: (
+  mono: 'Space Mono',
+);
+
+$fontSize: (
+  xs: 0.8125rem,
+  sm: 0.9375rem,
+  base: 1rem,
+  lg: 1.375rem,
+  xl: 1.625rem,
+);
+
+$fontWeight: (
+  normal: 400,
+  bold: 700,
+);
+
+$colors: (
+  neutral-100: hsl(0, 0%, 100%),
+  neutral-300: hsl(227, 100%, 98%),
+  neutral-500: hsl(217, 20%, 51%),
+  neutral-700: hsl(217, 35%, 45%),
+  neutral-900: hsl(217, 21%, 21%),
+  accent-400: hsl(212, 100%, 50%),
+);
+
+$spacing: (
+  sm: 0.5rem,
+  base: 1rem,
+  lg: 2rem,
+  xl: 3rem,
+);
+
+$radius: (
+  none: 0,
+  sm: 8px,
+  base: 16px,
+  full: 9999px,
+);
+
+$shadow: (
+  accent-light: 0px 16px 30px -10px rgba(70, 96, 187, 0.19),
+  accent-dark: 0px 16px 30px -10px rgba(70, 96, 187, 0.05),
+);

@@ -1,0 +1,25 @@
+.form {
+  position: relative;
+  width: 100%;
+
+  input {
+    width: inherit;
+    padding-inline-start: 4rem;
+    border: 0;
+  }
+
+  img {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+  }
+
+  button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background: var(--color-accent-400);
+    border: 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.scss" />
+    <script type="module" src="./src/scripts/main.js"></script>
+    <title>DevFinder - Github</title>
+  </head>
+  <body class="font-mono bg-neutral-300 text-neutral-900">
+    <header class="site-head">
+      <div class="site-head__inner | container">
+        <nav>
+          <h1 class="font-xl font-bold">devfinder</h1>
+          <button class="button" data-toggle="dark">
+            <span>Dark</span>
+            <img src="./src/assets/icon-moon.svg" alt="" />
+          </button>
+        </nav>
+        <form action="" class="form | shadow-accent-light">
+          <label class="visually-hidden" for="search"
+            >Search GitHub username…</label
+          >
+          <img src="./src/assets/icon-search.svg" alt="" />
+          <input
+            class="padding-base radius-base"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search GitHub username…"
+          />
+          <button
+            class="button | padding-sm radius-sm bg-accent-400 text-neutral-100"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div
+          class="devfinder-grid | container padding-xl margin-end-xl bg-neutral-100 radius-base shadow-accent-light"
+        >
+          <img
+            class="radius-full"
+            src="./src/assets/octocat.png"
+            alt="octocat profile image"
+          />
+
+          <div class="profile | flow">
+            <h2 class="font-xl font-bold">The Octocat</h2>
+            <a class="text-accent-400" href="#">@octocat</a>
+            <p>Joined <span>25 Jan 2011</span></p>
+          </div>
+          <p class="profile-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+            odio sapiente porro quo accusantium nobis unde dolorem! Fugiat iure
+            eveniet repudiandae totam laboriosam ex dolores nostrum explicabo!
+          </p>
+
+          <div class="repos | flow padding-lg bg-neutral-300 radius-base">
+            <div class="repos__inner">
+              <div>
+                <p class="font-xs">Repos</p>
+                <p class="font-xl font-bold" data-repos>8</p>
+              </div>
+              <div>
+                <p class="font-xs">Followers</p>
+                <p class="font-xl font-bold" data-followers>3938</p>
+              </div>
+              <div>
+                <p class="font-xs">Following</p>
+                <p class="font-xl font-bold" data-following>9</p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info__inner | even-columns">
+              <div class="info__link-container">
+                <div class="info__link">
+                  <img src="./src/assets/icon-location.svg" alt="" />
+                  <p data-location>San Francisco</p>
+                </div>
+                <div class="info__link">
+                  <img src="./src/assets/icon-website.svg" alt="" />
+                  <p data-website>https://github.blog</p>
+                </div>
+              </div>
+              <div class="info__link-container">
+                <div class="info__link">
+                  <img src="./src/assets/icon-twitter.svg" alt="" />
+                  <p data-twitterUsername>Not Available</p>
+                </div>
+                <div class="info__link">
+                  <img src="./src/assets/icon-company.svg" alt="" />
+                  <p data-company>@github</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-foot">
+      <div class="site-foot__inner | container padding-lg">
+        <p>Made by Alen Demirov</p>
+      </div>
+    </footer>
+  </body>
+</html>

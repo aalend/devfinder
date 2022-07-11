@@ -1,0 +1,17 @@
+.button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  transition: opacity 75ms ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.button[data-toggle='dark'] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}

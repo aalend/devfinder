@@ -1,0 +1,36 @@
+@use '../tokens' as *;
+@use '../mixins' as *;
+
+.text {
+  @include utilities('color', $colors);
+}
+
+.bg {
+  @include utilities('background-color', $colors);
+}
+
+.font {
+  @include utilities('font-family', $fontFamily);
+  @include utilities('font-size', $fontSize);
+  @include utilities('font-weight', $fontWeight);
+}
+
+.padding {
+  @include utilities('padding', $spacing);
+}
+
+.margin {
+  @include utilities('margin', $spacing);
+}
+
+.margin-end {
+  @include utilities('margin-block-end', $spacing);
+}
+
+.radius {
+  @include utilities('border-radius', $radius);
+}
+
+.shadow {
+  @include utilities('box-shadow', $shadow);
+}
