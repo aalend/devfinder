@@ -19,7 +19,7 @@
     <script type="module" src="./src/scripts/main.js"></script>
     <title>DevFinder - Github</title>
   </head>
-  <body class="font-mono bg-neutral-300 text-neutral-900">
+  <body class="font-mono">
     <header class="site-head">
       <div class="site-head__inner | container">
         <nav>
@@ -29,7 +29,7 @@
             <img src="./src/assets/icon-moon.svg" alt="" />
           </button>
         </nav>
-        <form action="" class="form | shadow-accent-light">
+        <form action="" class="form | shadow-accent-light radius-base">
           <label class="visually-hidden" for="search"
             >Search GitHub username…</label
           >
@@ -48,6 +48,9 @@
             Search
           </button>
         </form>
+        <div class="error-message | font-xs text-neutral-500">
+          Enter github username like 'octocat'
+        </div>
       </div>
     </header>
     <main>

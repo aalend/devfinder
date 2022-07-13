@@ -35,32 +35,32 @@
 
 @media (prefers-color-scheme: dark) {
   .dark {
-    background: var(--color-neutral-900) !important;
-    color: var(--color-neutral-100) !important;
+    background: var(--color-neutral-900);
+    color: var(--color-neutral-100);
   }
 
   .dark .form {
-    box-shadow: var(--shadow-accent-dark) !important;
+    box-shadow: var(--shadow-accent-dark);
 
     & input {
-      background: var(--color-neutral-700) !important;
-      color: var(--color-neutral-100) !important;
+      background: var(--color-neutral-700);
+      color: var(--color-neutral-100);
 
       &::placeholder {
-        color: var(--color-neutral-100) !important;
+        color: var(--color-neutral-100);
       }
     }
   }
 
   .dark .devfinder-grid {
-    background: var(--color-neutral-700) !important;
-    color: var(--color-neutral-100) !important;
-    box-shadow: var(--shadow-accent-dark) !important;
+    background: var(--color-neutral-700);
+    color: var(--color-neutral-100);
+    box-shadow: var(--shadow-accent-dark);
   }
 
   .dark .repos {
-    background: var(--color-neutral-900) !important;
-    color: var(--color-neutral-100) !important;
+    background: var(--color-neutral-900);
+    color: var(--color-neutral-100);
   }
 
   .dark .button[data-toggle='dark'] {

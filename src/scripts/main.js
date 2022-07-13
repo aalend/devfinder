@@ -1,3 +1,6 @@
+import iconMoon from '../assets/icon-moon.svg';
+import iconSun from '../assets/icon-sun.svg';
+
 const toggleTheme = document.querySelector('.button[data-toggle="dark"]');
 const searchForm = document.querySelector('.form');
 
@@ -75,7 +78,12 @@ const getUserFromAPI = async function (e) {
   e.preventDefault();
 
   try {
+    const errorElement = document.querySelector('.error-message');
     const value = this.querySelector('input').value;
+
+    !value
+      ? (errorElement.style.display = 'block')
+      : (errorElement.style.display = 'none');
 
     if (!value) throw new Error(`Error: No value entered!`);
     const json = await getJSON(`https://api.github.com/users/${value}`);
@@ -95,12 +103,12 @@ const toggleDarkMode = function () {
 
   if (body.classList.contains('dark')) {
     targetButton.textContent = 'light';
-    imageButton.src = './../../src/assets/icon-sun.svg';
+    imageButton.src = iconSun;
   }
 
   if (!body.classList.contains('dark')) {
     targetButton.textContent = 'dark';
-    imageButton.src = './../../src/assets/icon-moon.svg';
+    imageButton.src = iconMoon;
   }
 };
 
